@@ -45,8 +45,8 @@ a:hover {
 
   // Responsive text purple style
   @include respond(phone) {
-    background-image: none;
-    -webkit-text-fill-color: $secondary-color;
+    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    -webkit-text-fill-color: transparent;
   }
 
   &:hover {

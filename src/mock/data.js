@@ -11,14 +11,14 @@ export const headData = {
 export const heroData = {
   title: 'Hi, my name is',
   name: 'Vivek Chaurasia',
-  subtitle: 'I,m the .Net Full Stack Develeoper',
+  subtitle: 'I,m the .NET Full Stack Developer',
   cta: '',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: 'I am Software Developer/Architect. I’ve been a professional developer for more than 4 years. I’ve mostly worked professionally with ASP.Net MVC with C#, VB, SQL Server sometimes with React JS, Bootstrap also.',
+  paragraphOne: 'I am Software Developer/Architect. I’ve been a professional developer for more than 4 years and mostly worked professionally with ASP.Net MVC with C#, VB, SQL Server sometimes with React JS, Bootstrap also.',
   paragraphTwo: 'My working philosophies:– Use the right tool for the job. A programming language is just a tool! & Always try to learn something new.',
   paragraphThree: 'Beside programming I am interested in sports, Online Gaming and Stock Market. I enjoy meeting new people and finding ways to help them have an uplifting experience',
   resume: '', // if no resume, the button will not show up
