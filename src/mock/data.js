@@ -55,6 +55,67 @@ export const projectsData = [
   // },
 ];
 
+export const resumeData ={
+  education: [
+    {
+      school:'University',
+      degree:'Masters in Beer tasting',
+      graduated:'April 2007',
+      description:'Describe your experience at school, what you learned, what useful skills you have acquired etc.',
+    },
+    {
+      school:'School #1 Maybe College?',
+      degree:'What did you study 101',
+      graduated:'March 2003',
+      description:'Describe your experience at school, what you learned, what useful skills you have acquired etc',
+    },
+  ],
+  work: [
+    {
+      company:'Awesome Design Studio',
+      title:'Senior UX God ',
+      years:'March 2010 - Present',
+      description:'Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know.',
+    },
+    {
+      company:'Super Cool Studio',
+      title:'Junior bug fixer',
+      years:'March 2007 - February 2010',
+      description:'Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know.',
+    },
+  ],
+  skills: [
+    {
+      name:'Python',
+      level:'60%',
+    },
+    {
+      name:'VueJs',
+      level:'55%',
+    },
+    {
+      name:'ReactJs',
+      level:'50%',
+    },
+    {
+      name:'CSS',
+      level:'90%',
+    },
+    {
+      name:'PHP',
+      level:'90%',
+    },
+    {
+      name:'Swift',
+      level:'90%',
+    },
+    {
+      name:'JAVA',
+      level:'90%',
+    },
+  ],
+};
+
 // CONTACT DATA
 export const contactData = {
   cta: 'chaursiavivek@gmail.com',

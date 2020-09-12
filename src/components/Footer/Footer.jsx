@@ -10,7 +10,7 @@ const Footer = () => {
   const { footer } = useContext(PortfolioContext);
   const { networks } = footer;
   const { isEnabled } = githubButtons;
-
+  
   return (
     <footer className="footer navbar-static-bottom">
       <Container>
@@ -20,9 +20,11 @@ const Footer = () => {
           </Link>
         </span>
         <div className="social-links">
+          
           {networks &&
             networks.map((network) => {
               const { id, name, url } = network;
+              
               return (
                 <a
                   key={id}
