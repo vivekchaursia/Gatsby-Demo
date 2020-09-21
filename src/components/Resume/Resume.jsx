@@ -2,7 +2,17 @@ import React, { Component } from 'react';
 import Title from '../Title/Title';
 import Fade from 'react-reveal/Fade';
 
+// const [isDesktop, setIsDesktop] = useState(false);
+// const [isMobile, setIsMobile] = useState(false);
+
 class Resume extends Component {
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     setIsDesktop: false,
+  //     setIsMobile:false
+  //   };
+  // }
 
   getRandomColor() {
     var letters = '0123456789ABCDEF';
@@ -13,8 +23,22 @@ class Resume extends Component {
     return color;
   }
   
-  render() {
+  
 
+  useEffect(){
+    if (window.innerWidth > 769){
+      setIsDesktop(true);
+      setIsMobile(false);
+    }
+    else{
+      setIsMobile(true);
+      setIsDesktop(false);
+    }
+  }
+
+  render() {
+    
+    
     if(this.props.data){
       
        var skillmessage = this.props.data.skillmessage;
@@ -62,10 +86,10 @@ class Resume extends Component {
 
       <div className="row work">
       <Fade bottom duration={1000} delay={600} distance="30px">
-         <div className="three columns header-col">
-            <h1><span>Work</span></h1>
+        <div className="six columns main-col">
+          <h1><span>Work</span></h1>
          </div>
-
+        
          <div className="nine columns main-col">
           {work}
         </div>
@@ -75,8 +99,8 @@ class Resume extends Component {
 
 
       <div className="row skill">
-      <Fade left duration={1000} delay={600} distance="30px">
-         <div className="three columns header-col">
+      <Fade  bottom duration={1000} delay={1000} distance="40px">
+         <div className="six columns main-col">
             <h1><span>Skills</span></h1>
          </div>
 

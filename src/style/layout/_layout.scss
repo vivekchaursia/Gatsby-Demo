@@ -7,27 +7,49 @@
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
+  
+
 }
 
-#resume a, #resume a:visited  { color: #0762f9; }
+#resume a, #resume a:visited  { color: #0762f9;}
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
+   @include respond(phone){
+    font: 16px/24px 'opensans-bold', sans-serif;
+   }
 }
 #resume h1 span {
    border-bottom: 3px solid #0762f9;
    padding-bottom: 6px;
+   margin-left: 115%;
+   @include respond(phone){
+    letter-spacing: 3px;
+    margin-left: 95%;
+   }
 }
 #resume h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
-   margin-right: 50%;
+   margin-right: 0%;
+   margin-left: 50%;
+   @include respond(phone){
+    text-align: center;
+    margin-left: 43%;
+   }
 }
 
-#resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
+#resume .header-col { 
+  padding-top: 9px; 
+  @include respond(phone) {
+    padding-top: 0;
+    margin-bottom: 48px;
+    text-align: center;
+  } 
+}
+#resume .main-col { padding-right: 10%; @include respond(phone) {padding-right: 30px;} }
 
 .education, .work {
    margin-bottom: 48px;
@@ -44,7 +66,13 @@
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
-   margin-right: 50%;
+   margin-right: 0%;
+   margin-left: 50%;
+   @include respond(phone) {
+    text-align: center;
+    margin-left: 39%;
+    margin-right: 0%;
+   }
 }
 #resume .info span {
    margin-right: 5px;
@@ -61,7 +89,10 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   margin: 0 auto;
-  margin-right: 50%;
+  
+  margin: auto;
+   margin-left: 50%;
+  
 }
 
 /*----------------------------------------------*/
@@ -72,7 +103,11 @@
 	width: 95%;
 	float: left;
 	padding: 0;
-	text-align: left;
+  text-align: left;
+  @include respond(phone){
+    width: 140%;
+  }
+  
 }
 .bars .skills {
   	margin-top: 36px;
@@ -125,91 +160,3 @@
   min-height: 1px;
   float: left;
 }
-
-/*
-.git {
-  	-moz-animation: git 2s ease;
-  	-webkit-animation: git 2s ease;
-}
-.illustrator {
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
-}
-.reactjs {
-  	-moz-animation: reactjs 2s ease;
-  	-webkit-animation: reactjs 2s ease;
-}
-.css {
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
-}
-.html5 {
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
-}
-.vuejs {
-  	-moz-animation: vuejs 2s ease;
-  	-webkit-animation: vuejs 2s ease;
-}
-.mongodb {
-  	-moz-animation: mongodb 2s ease;
-  	-webkit-animation: mongodb 2s ease;
-}
-
-@-moz-keyframes git {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes reactjs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-moz-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-
-@-webkit-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-webkit-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes reactjs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-webkit-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-webkit-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}  */
