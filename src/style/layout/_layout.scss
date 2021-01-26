@@ -92,6 +92,10 @@
   
   margin: auto;
    margin-left: 50%;
+   @include respond(phone){
+      margin: auto;
+      margin-left: auto;
+   }
   
 }
 
