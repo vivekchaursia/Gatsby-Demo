@@ -28,13 +28,13 @@ function App() {
         company:'Reliance Securities',
         title:'Software Engineer',
         years:'April 2019 - Present',
-        description:'Working Here As a in-house developer worked on various internal projects. Mainly worked on existing software to correct errors, adapt to new hardware and improve performance.',
+        description:'Working Here As an in-house developer worked on various internal projects. Mainly worked on existing software to correct errors, adapt to new hardware, and improve performance.',
       },
       {
         company:'Bestfit Business Solutions',
         title:'Software Developer',
         years:'Jun 2016 - March 2019',
-        description:'Joined here as a intern, got an opportunity to work on various projects on BFSI domain. Worked closely with clients to establish problem specifications and system designs. ',
+        description:'Joined here as an intern, got an opportunity to work on various projects in the BFSI domain. Worked closely with clients to establish problem specifications and system designs. ',
       },
     ],
     skills: [
